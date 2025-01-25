@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>足立と西の本日の恋愛予想確率</title>
+  <style>
+    body {
+      background-color: #ffe4e1;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #d63384;
+      font-size: 2rem;
+    }
+    .result {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .advice {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      color: #555;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>足立と西の本日の恋愛予想確率</h1>
+    <div class="result" id="love-probability">--%</div>
+    <h2>岸本からのアドバイス</h2>
+    <div class="advice" id="advice">--</div>
+  </div>
+  <footer>
+    立案者：岸本　プログラム：神谷　責任はすべて岸本が請け負います。文句は岸本君に言ってください。
+  </footer>
+
+  <script>
+    // 確率の選択肢
+    const probabilities = ["0%", "無理%", "100%", "-4949%", "53%"];
+
+    // アドバイスの選択肢
+    const advices = [
+      "今すぐ昼食に誘ってみよう！",
+      "今日中に手をつないで距離を短くしよう",
+      "気になるあの子に気持ちを伝えてみよう！",
+      "彼女を怒らせないように！振られる確率アップ！",
+      "恋愛は数学と一緒！",
+      "しっかり彼女を見張って居よう！浮気されるかも！？",
+      "女子と話さないようにしよう！勘違いされる確率アップ！",
+      "心をオープンに。チャックもオープンに。",
+      "たまには褒めよう！",
+      "彼女のことよりYouTube！",
+      "親よりもみた彼女の顔と言えるようになろう！",
+      "三度の飯より彼女を見よう！",
+      "無意識に数学のノートに西心暖と書けたら１段階目！",
+      "梅森先生と手をつないでみよう！",
+      "岸本とキスをしよう！！！！！"
+    ];
+
+    // ランダムに確率を表示
+    const loveProbability = document.getElementById('love-probability');
+    const randomProbability = probabilities[Math.floor(Math.random() * probabilities.length)];
+    loveProbability.textContent = randomProbability;
+
+    // ランダムにアドバイスを表示
+    const advice = document.getElementById('advice');
+    const randomAdvice = advices[Math.floor(Math.random() * advices.length)];
+    advice.textContent = randomAdvice;
+  </script>
+</body>
+</html>
